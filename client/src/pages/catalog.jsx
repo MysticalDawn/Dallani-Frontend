@@ -13,7 +13,7 @@ export const Catalog = () => {
   const [cookies] = useCookies(["token"]);
   const getUserInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/GetUserInfo", {
+      const response = await axios.get("https://api-dallani-backend.onrender.com/GetUserInfo", {
         headers: {
           Authorization: `Bearer ${cookies.token}`,
         },
@@ -36,7 +36,7 @@ export const Catalog = () => {
     getUserInfo();
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/jobs/data");
+        const response = await axios.get("https://api-dallani-backend.onrender.com/jobs/data");
         setData(response.data);
         setVisibleData(response.data);
       } catch (error) {

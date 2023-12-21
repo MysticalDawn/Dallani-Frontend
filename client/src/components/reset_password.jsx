@@ -11,7 +11,7 @@ export const PasswordReset = () => {
 	const [error, setError] = useState("");
 	const param = useParams();
 	const navigate = useNavigate();
-	const url = `http://localhost:3001/password-reset/${param.id}/${param.token}`;
+	const url = `https://api-dallani-backend.onrender.com/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {

@@ -20,7 +20,7 @@ export const Login = () => {
   const loginUser = async () => {
     //e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", {
+      const response = await axios.post("https://api-dallani-backend.onrender.com/auth/login", {
         email: email.toLowerCase(),
         password,
       });

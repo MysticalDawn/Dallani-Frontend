@@ -50,7 +50,7 @@ export const Profile = () => {
 
   const getUserInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/GetUserInfo", {
+      const response = await axios.get("https://api-dallani-backend.onrender.com/GetUserInfo", {
         headers: {
           Authorization: `Bearer ${cookies.token}`,
         },
@@ -101,7 +101,7 @@ export const Profile = () => {
     setIsEditing(false);
     try {
       const response = await axios.post(
-        "http://localhost:3001/update",
+        "https://api-dallani-backend.onrender.com/update",
         profileData,
         { headers: { Authorization: `Bearer ${cookies.token}` } }
       );
@@ -129,7 +129,7 @@ export const Profile = () => {
       formData.append("file", file);
 
       axios
-        .post("http://localhost:3001/upload/upload-picture", formData, {
+        .post("https://api-dallani-backend.onrender.com/upload/upload-picture", formData, {
           headers: {
             Authorization: `Bearer ${cookies.token}`,
           },
@@ -150,7 +150,7 @@ export const Profile = () => {
       formData.append("file", file);
 
       axios
-        .post("http://localhost:3001/upload/upload-cv", formData, {
+        .post("https://api-dallani-backend.onrender.com/upload/upload-cv", formData, {
           headers: {
             Authorization: `Bearer ${cookies.token}`,
           },

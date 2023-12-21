@@ -9,7 +9,7 @@ export const CustomNav = () => {
   const [userName, setUserName] = useState("");
   const getUserInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/GetUserInfo", {
+      const response = await axios.get("https://api-dallani-backend.onrender.com/GetUserInfo", {
         headers: {
           Authorization: `Bearer ${cookies.token}`,
         },

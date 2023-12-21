@@ -9,7 +9,7 @@ export const ForgotPassword = () => {
   const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://localhost:3001/password-reset`;
+			const url = `https://api-dallani-backend.onrender.com/password-reset`;
 			const { data } = await axios.post(url, { email });
 			setMsg(data.message);
 			setError("");

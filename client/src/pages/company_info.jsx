@@ -19,7 +19,7 @@ export const CompanyInfo = () => {
   const getCompanyReviews = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/reviews/data/${company}`
+        `https://api-dallani-backend.onrender.com/reviews/data/${company}`
       );
       setReviewsData(response.data);
     } catch (error) {
@@ -28,7 +28,7 @@ export const CompanyInfo = () => {
   };
   const getUserInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/GetUserInfo", {
+      const response = await axios.get("https://api-dallani-backend.onrender.com/GetUserInfo", {
         headers: {
           Authorization: `Bearer ${cookies.token}`,
         },
@@ -47,7 +47,7 @@ export const CompanyInfo = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/jobs/data/${company}`
+          `https://api-dallani-backend.onrender.com/jobs/data/${company}`
         );
         setData(response.data);
         console.log(data);
@@ -105,7 +105,7 @@ export const CompanyInfo = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/reviews/post",
+        "https://api-dallani-backend.onrender.com/reviews/post",
         formData
       );
       setReviewText("");
@@ -115,7 +115,7 @@ export const CompanyInfo = () => {
       });
       console.log(starValue, "is astar");
       const JobResponse = await axios.post(
-        "http://localhost:3001/jobs/modifyReviews",
+        "https://api-dallani-backend.onrender.com/jobs/modifyReviews",
         { starRating: starValue, company }
       );
       console.log("Response:", response.data);
@@ -143,7 +143,7 @@ export const CompanyInfo = () => {
     };
     try {
       const response = await axios.post(
-        `http://localhost:3001/application/sendApplication`,
+        `https://api-dallani-backend.onrender.com/application/sendApplication`,
         sentData
       );
       console.log(response.status);

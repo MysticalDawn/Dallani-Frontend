@@ -29,7 +29,7 @@ export const Signup = () => {
   } = useForm();
   const signUserUp = async () => {
     try {
-      const response = await axios.post("http://localhost:3001/auth/register", {
+      const response = await axios.post("https://api-dallani-backend.onrender.com/auth/register", {
         email: email.toLowerCase(),
         password,
         name,
@@ -44,7 +44,7 @@ export const Signup = () => {
   const checkEmail = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/auth/checkEmail", {
+      const response = await axios.post("https://api-dallani-backend.onrender.com/auth/checkEmail", {
         email: email.toLowerCase(),
       });
       console.log(response.status);
@@ -62,7 +62,7 @@ export const Signup = () => {
   const sendVerification = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/verification/sendVerification",
+        "https://api-dallani-backend.onrender.com/verification/sendVerification",
         {
           student_email: email.toLowerCase(),
         }
@@ -79,7 +79,7 @@ export const Signup = () => {
   const verifyCode = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/verification/verifyCode",
+        "https://api-dallani-backend.onrender.com/verification/verifyCode",
         {
           userVerificationCode: verCode,
         }
