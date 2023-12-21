@@ -1,0 +1,150 @@
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.login-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-self: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+
+
+.login-starting-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: fit-content;
+  width: fit-content;
+}
+
+.bellow-login-text {
+  font-size: 20px;
+  color: rgb(30, 24, 30);
+  margin-top: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 50%;
+  margin-top: 1rem;
+}
+
+.login-form h3 {
+  color: rgb(30, 24, 30);
+  margin-top: 2.2rem;  
+  font-size: 25px;
+  height: 50px ;
+  overflow: hidden;
+}
+
+
+.login-email-input {
+  margin-top: 1rem;
+  width: 50%;
+  height: 3rem;
+  border-radius: 0.1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid rgb(255, 255, 255);
+  outline: none;
+  padding-left: 1rem;
+  font-size: 15px;
+  font-family: "JetBrains Mono", monospace;
+  background-color: transparent;
+  color: black;
+  transition: box-shadow 0.3s;
+}
+
+.login-email-input:focus {
+  box-shadow: 0 3px 0 0 #ffffff;
+}
+
+.login-password-input {
+  margin-top: 1rem;
+  width: 50%;
+  height: 3rem;
+  border-radius: 0.1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid rgb(255, 255, 255);
+  outline: none;
+  padding-left: 1rem;
+  font-size: 15px;
+  font-family: "JetBrains Mono", monospace;
+  background-color: transparent;
+  color: black;
+  transition: box-shadow 0.3s;
+}
+
+.login-password-input:focus {
+  box-shadow: 0 3px 0 0 #ffffff;
+}
+
+.login-btn {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  color: rgb(30, 24, 30);
+  background-color: white;
+  border: 0.1rem solid;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin-top: 4.8rem;
+  margin-left: 10%;
+  cursor: pointer;
+  width: 20rem;
+  height: 70px;
+  transition: background-color 0.7s;
+  overflow: hidden;
+}
+
+.login-btn:hover {
+  background-color: rgb(30, 24, 30);
+  color: white;
+}
+
+.login-bottom-text {
+  color: rgb(30, 24, 30);
+  font-size: 15px;
+  margin-left: 14%;
+}
+
+.forgot-password {
+  color: rgb(30, 24, 30);
+  font-size: 15px;
+  margin-left: 18%;
+}
+
+.login-right-side {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  width: 50%;
+}
+
+error{
+  font-size: 17px;
+  color: #ff6774;
+  height: 45px;
+  overflow: hidden;
+  
+}

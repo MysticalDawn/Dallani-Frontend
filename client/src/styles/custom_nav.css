@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&family=Playfair+Display&family=Poppins:wght@600&family=Raleway:wght@500&display=swap");
+.nav_header {
+  width: 85%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+nav {
+  display: flex;
+  padding: 2.2rem;
+  width: 95%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+
+.a-tag-nav {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(30, 24, 30);
+  transition: border 0.2s;
+  border-radius: 0.5rem;
+}
+
+.a-tag-nav::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background: rgb(30, 24, 30);
+  transition: width 0.2s;
+}
+
+.a-tag-nav:hover::after {
+  width: 100%;
+}
+
+
+
+.nav-elements {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+  width: 100%;
+
+  color: rgb(30, 24, 30);
+}
+
+#sign-in-up,.bttn {
+  color: rgb(30, 24, 30);
+  background-color: white;
+  text-align: center;
+  width: fit-content;
+  padding: 1rem;
+  transition: border 0.1s;
+  text-decoration: none;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  transition: background-color 0.6s;
+}
+
+#sign-in-up:hover,.bttn:hover {
+  background-color: rgb(30, 24, 30);
+  color: white;
+}
+
+
+#already-login {
+  color: white;
+  text-align: center;
+  width: fit-content;
+  padding: 0.3rem;
+  text-decoration: none;
+}

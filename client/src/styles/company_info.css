@@ -1,0 +1,150 @@
+.main-comp {
+    margin-bottom: 30px !important;
+    margin: 9rem;
+    margin-top: 40px;
+}
+
+
+.company-info{
+    border-bottom: 4px solid white;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+img[alt="logo"]{
+    border-radius: 50%;
+    padding: 10px;
+}
+#company-name{
+    display: inline;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--secondary-background);
+    font-weight: bold
+}
+.company-description{
+    margin-top: 1rem;
+    font-size: x-large;
+    text-indent: 2rem;
+}
+.company-description::first-letter{
+    font-size: xx-large
+}
+.company-data {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    
+}
+.company-info .train-location {
+    display: inline-flex;
+    align-items: center;
+}
+.train-location > p{
+    display: inline;
+    font-size: x-large;
+}
+
+.reviews{
+    padding-top: 2rem;
+    border-bottom: 4px solid white;
+    padding-bottom: 2rem;
+}
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-header > h2 {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    display: inline;
+    padding-right: 20px;
+}
+.review-container{
+    margin-top: 1rem;
+    border: 2px solid lightskyblue;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+}
+.review-container * {
+    color: rgb(0, 0, 0);
+}
+.person-data {
+    display: flex;
+    align-items: center;
+}
+.person-data img {
+    border-radius: 20%;
+}
+.review-container p {
+    display: inline;
+}
+.user-name {
+    margin-left: 10px;
+    font-size: 1.6rem;
+}
+.major{
+    padding-top: 3px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+.review-text {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(29, 29, 29, 0.322);
+    border-radius: 10px;
+}
+.rating-section {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.rating-section > p {
+    margin-right: 10px;
+}
+.rating-buttons {
+    direction: rtl;
+    right: 0px;
+}
+.rating-buttons > button{
+    margin-left: 10px;
+    border-radius: 50%;
+}
+textarea {
+    display: block;
+}
+.star-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.MuiRating-visuallyHidden, .css-dqr9h-MuiRating-label {
+    padding: 5px 0px;
+}
+.active-stars * {
+    color: #faaf00;
+}
+
+.main-buttons {
+    font-size: larger;
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid white;
+    color: black;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.main-buttons:hover {
+    background-color: #043a53;
+}
