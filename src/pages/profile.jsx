@@ -113,12 +113,10 @@ export const Profile = () => {
     }
   };
 
-  const updateProfilePic = (newPicPath) => {
-    setTimeout(() => {
-      setProfileData({
-        ...profileData,
-        picture: newPicPath,
-      });
+ const updateProfilePic = (newPicPath) => {
+    setProfileData({
+      ...profileData,
+      picture: newPicPath,
     });
   };
 
@@ -135,7 +133,8 @@ export const Profile = () => {
           },
         })
         .then((response) => {
-          updateProfilePic(response.data.filePath);
+          const fullImageUrl = `https://api-dallani-backend.onrender.com${response.data.filePath}`;
+          updateProfilePic(fullImageUrl);
         })
         .catch((error) => {
           console.error(error);
